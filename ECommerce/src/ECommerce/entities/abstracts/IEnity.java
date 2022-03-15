@@ -1,5 +1,5 @@
 package ECommerce.entities.abstracts;
 
-public interface IUser {
+public interface IEnity {
 
 }

@@ -8,7 +8,6 @@ public interface IUserDal {
 	void add(User user);
 	void delete(User user);
 	void update(User user);
-	
-	int get(int id);
+	User get(int id);
 	List<User> getAll();
 }

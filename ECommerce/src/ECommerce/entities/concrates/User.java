@@ -1,17 +1,31 @@
 package ECommerce.entities.concrates;
 
-import ECommerce.entities.abstracts.IUser;
+import ECommerce.entities.abstracts.IEnity;
 
-public class User implements IUser {
+public class User implements IEnity {
 	int id;
+	String ad;
 	String soyad; 
 	String eposta;
 	String parola;
-	public User(int id, String soyad, String eposta, String parola) {
+	public User(int id, String soyad, String eposta, String parola, String ad) {
 		this.id = id;
+		this.ad = ad;
 		this.soyad = soyad;
 		this.eposta = eposta;
 		this.parola = parola;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getAd() {
+		return ad;
+	}
+	public void setAd(String ad) {
+		this.ad = ad;
 	}
 	public String getSoyad() {
 		return soyad;
